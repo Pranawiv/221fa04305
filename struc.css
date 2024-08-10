@@ -1,0 +1,254 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+header.hero {
+    background: url('https://img.freepik.com/premium-photo/smiling-woman-photographer-is-taking-images-photo-with-dslr-camera-isolated-studio-blue-background_1162141-2050.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero-content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    font-family: cursive;
+}
+
+.button {
+    background-color: #ff4757;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.background-content {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.background-content .image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.background-content .text {
+    flex: 1;
+    margin-left: 20px;
+}
+/* Styling for the Background Section */
+section.background {
+    background-color: #f0f0f0; /* Light grey background color */
+    padding: 20px; /* Padding around the section */
+    margin-bottom: 20px; /* Space below the section */
+    text-align: center; /* Center align text */
+}
+
+/* Container styling for the background section */
+section.background .container {
+    max-width: 1200px; /* Max width for the container */
+    margin: 0 auto; /* Center align the container */
+}
+
+/* Box styling for the background content */
+section.background .background-content {
+    background: #ffffff; /* White background for the box */
+    border: 1px solid #dddddd; /* Light grey border for the box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Styling for text within the box */
+section.background .text {
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Space to the right of the text */
+}
+
+/* Styling for the image within the box */
+section.background .image img {
+    max-width: 100%; /* Responsive image size */
+    height: auto; /* Maintain aspect ratio */
+    border: radius 50%;; /* Rounded corners */
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+section .background,.team{
+    background-color: #f0f0f0; /* Light grey background color */
+}
+
+/* Specific styles for the background section */
+section.background {
+    text-align: center; /* Center align text */
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center; /* Centers the team members horizontally */
+    gap: 20px; /* Adds spacing between the images */
+    flex-wrap: nowrap; /* Ensures that the images stay on the same line */
+}
+
+.team-members .member img {
+    border-radius: 50%; /* Round images for team members */
+    width: 150px;
+    height: 150px; 
+}
+.gallery-items {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between each item */
+    overflow-x: auto; /* Allows horizontal scrolling if items exceed viewport width */
+    white-space: nowrap; /* Prevents items from wrapping to the next line */
+    padding: 20px; /* Optional: Adds padding around the gallery items */
+}
+
+.gallery-items .item {
+    flex: 0 0 auto; /* Prevents items from growing or shrinking */
+    display: inline-block; /* Displays each item inline with block properties */
+    position: relative; /* Sets position context for absolute positioning inside */
+    margin-right: 20px; /* Space between items */
+}
+
+.gallery-items .item img {
+    width: 200px; /* Fixed width for all images */
+    height: 150px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images cover the dimensions without distortion */
+    border-radius: 5px; /* Rounds the corners of the images */
+    display: block; /* Removes extra space below the image */
+}
+
+.gallery-items1 {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between each item */
+    overflow-x: auto; /* Allows horizontal scrolling if items exceed viewport width */
+    white-space: nowrap; /* Prevents items from wrapping to the next line */
+    padding: 20px; /* Optional: Adds padding around the gallery items */
+}
+
+.gallery-items1 .item {
+    flex: 0 0 auto; /* Prevents items from growing or shrinking */
+    display: inline-block; /* Displays each item inline with block properties */
+    position: relative; /* Sets position context for absolute positioning inside */
+    margin-right: 20px; /* Space between items */
+}
+
+.gallery-items1 .item img {
+    width: 200px; /* Fixed width for all images */
+    height: 150px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images cover the dimensions without distortion */
+    border-radius: 5px; /* Rounds the corners of the images */
+    display: block; /* Removes extra space below the image */
+}
+
+.contact form {
+    max-width: 300px; /* Adjusted to provide enough space for inline elements */
+    margin: 0 auto;
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows elements to wrap as needed */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Vertically centers the items */
+}
+
+.contact form .input {
+    width: 100%; /* Full width to contain the inputs */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button {
+    margin: 10px 0; /* Adds margin to all form elements */
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+}
+
+.contact form input {
+    max-width: 300px; /* Adjusted width for input fields */
+    padding: 10px; /* Adds padding inside the input fields */
+}
+
+.contact form textarea {
+    max-width: 300px; /* Match the width of the inputs */
+    height: 100px; /* Fixed height for textarea */
+    padding: 10px; /* Adds padding inside the textarea */
+}
+
+.contact form button {
+    background-color: #ff4757;
+    color: white;
+    padding: 10px 20px; /* Adjusted padding for button */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none; /* Removes default border */
+    cursor: pointer; /* Adds pointer cursor on hover */
+}
+
+
+/* General Styles for the Section and Footer */
+section.contact, footer {
+    background-color: #374c8a; /* Blue background color */
+    color: white; /* White text color for contrast */
+    padding: 20px; /* Padding for spacing inside */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align text */
+    font-family: Arial, sans-serif; /* Font style for readability */
+}
+
+
+
+/* Footer Styles */
+footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Font size for the copyright text */
+}
+
+footer .social-links {
+    margin-top: 10px; /* Space above the social links */
+}
+
+footer .social-links a {
+    color: white; /* White color for social links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Horizontal margin between links */
+    font-size: 16px; /* Font size for social links */
+}
+
+footer .social-links a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
